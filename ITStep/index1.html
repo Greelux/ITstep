@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Список покупок</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .bought {
+      text-decoration: line-through;
+      color: gray;
+    }
+    .item {
+      margin-bottom: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Список покупок</h1>
+  <div id="shoppingOutput"></div>
+  <hr>
+
+  <h2>Додати покупку</h2>
+  <label>
+    Назва товару:
+    <input type="text" id="itemName">
+  </label>
+  <br><br>
+  <label>
+    Кількість:
+    <input type="number" id="itemQuantity" value="1" min="1">
+  </label>
+  <br><br>
+  <button onclick="handleAdd()">Додати</button>
+
+  <script src="script1.js"></script>
+</body>
+</html>
