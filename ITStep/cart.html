@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Міні-магазин – Кошик</title>
+  <link rel="stylesheet" href="styles1.css">
+  <script src = "script1.js"></script>
+</head>
+<body>
+<header class="top-bar">
+  <button class="back-btn" onclick="history.back()">←</button>
+  <div class="logo">Ваш кошик</div>
+  <div class="cart-info">
+    Сума: <span id="cart-total-price">0 $</span>
+    <a href="cart.html" class="cart-link">🛒</a>
+  </div>
+</header>
+
+<main class="page">
+  <div id="cart-items" class="cart-items"></div>
+  <div id="cart-summary" class="cart-summary"></div>
+
+  <button class="clear-btn" onclick="clearCart(); renderCartPage(); updateHeaderSummary();">
+    Очистити кошик
+  </button>
+</main>
+</body>
+</html>

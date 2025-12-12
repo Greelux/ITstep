@@ -1,40 +1,23 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Список покупок</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-    .bought {
-      text-decoration: line-through;
-      color: gray;
-    }
-    .item {
-      margin-bottom: 4px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" href = "style1.css">
+  <script src = "script1.js"></script>
+  <title>Document</title>
 </head>
 <body>
-
-  <h1>Список покупок</h1>
-  <div id="shoppingOutput"></div>
-  <hr>
-
-  <h2>Додати покупку</h2>
-  <label>
-    Назва товару:
-    <input type="text" id="itemName">
-  </label>
-  <br><br>
-  <label>
-    Кількість:
-    <input type="number" id="itemQuantity" value="1" min="1">
-  </label>
-  <br><br>
-  <button onclick="handleAdd()">Додати</button>
-
-  <script src="script1.js"></script>
+    <header class="top-bar">
+        <div class="logo">Міні-магазин</div>
+            <div class="cart-info">
+            Сума: <span id="cart-total-price">0 $</span>
+            <a href="cart.html" class="cart-link">🛒</a>
+        </div>
+    </header>
+<main class="page">
+  <h1>Каталог товарів</h1>
+  <div id="product-list" class="product-list"></div>
+</main>
 </body>
 </html>
